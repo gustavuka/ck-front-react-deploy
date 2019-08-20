@@ -19,7 +19,7 @@ class App extends React.Component {
     }
     getNews = async () => {
         const news_call = await fetch(
-            "http://gustavukaz.pythonanywhere.com/api/articles/"
+            "https://gustavukaz.pythonanywhere.com/api/articles/"
         );
         // const news_call = await fetch(process.env.REACT_APP_API);
         const apidata = await news_call.json();
