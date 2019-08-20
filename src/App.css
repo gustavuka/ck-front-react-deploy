@@ -1,0 +1,134 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+
+#navborder {
+    border-bottom: 1px solid rgb(182, 182, 182) !important;
+}
+
+.navbar-light .navbar-nav li .nav-link {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: black;
+    opacity: 0.75;
+}
+
+#specific {
+    border: none;
+}
+  
+.card-text {
+    font-size: 0.85rem;
+    opacity: 0.60;
+}
+
+#login {
+    color: #4990E2;
+}
+
+.card-title {
+    font-weight: bold;
+}
+  
+#headline-title {
+    font-size: 0.95rem;
+}
+  
+#default-title {
+    font-size: 0.95rem;
+}
+  
+#author {
+    font-size: 0.75rem;
+    font-style: italic;
+    opacity: 0.80; 
+}
+  
+#subject-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+#divider {
+    color: gray;
+    background-color: gray;
+    height: 0.2px;
+    width: 1050px;
+    margin: auto;
+    opacity: 0.10;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+#def-author-image {
+    border-radius: 50%;
+    width: 32px;
+}
+
+#author-image {
+    border-radius: 50%;
+    width: 42px;
+}
+
+#loader {
+    text-align: center;
+    margin-top: 200px;
+}
+
+@media screen and (max-width : 425px)
+{
+    .card-body #headline-title,
+    .card-body #default-title,
+    .card-title
+    {
+        font-size: 0.95rem;
+    }
+    #navlogo 
+    {
+        margin-right:41%;
+    }
+    #divider 
+    {
+        display: none;
+    }
+    #author-image {
+        width: 32px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width : 991px) {
+    #navlogo 
+    {
+        margin-right:46%;
+    }
+    #divider 
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .readbutton {
+        position: absolute;
+        width: 500px;
+        left:15px;
+        top: 180px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .35s ease;
+    }
+    
+    .readbutton a {
+        width: 200px;
+        padding: 12px 48px;
+        text-align: center;
+        color: white;
+        border: solid 2px white;
+        z-index: 1;
+    }
+    
+    .cont:hover .readbutton {
+        opacity: 1;
+        margin: auto;
+    }
+}
