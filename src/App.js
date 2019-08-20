@@ -18,9 +18,7 @@ class App extends React.Component {
         this.timerID = setInterval(() => this.getNews(), 30000);
     }
     getNews = async () => {
-        const news_call = await fetch(
-            "https://gustavukaz.pythonanywhere.com/api/articles/"
-        );
+        const news_call = await fetch(process.env.REACT_APP_API);
         // const news_call = await fetch(process.env.REACT_APP_API);
         const apidata = await news_call.json();
         this.setState(() => {
